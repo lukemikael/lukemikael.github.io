@@ -11,7 +11,7 @@ function CCAndCocDisplay() {
     }}>
         <div class="overflow"
             style={{
-              overflow: auto,
+              overflow: "auto",
               flex: "1 1 auto"
             }}>
           
