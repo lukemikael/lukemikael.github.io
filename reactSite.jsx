@@ -1,7 +1,7 @@
 function CCAndCocDisplay() {
  return (
     <p style={{ 
-      width: "200px",
+      width: "85vw",
       height: "100vh",
       position: "fixed",
       top: 0,
