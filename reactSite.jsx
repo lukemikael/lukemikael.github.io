@@ -1,6 +1,6 @@
 function CCAndCocDisplay() {
  return (
-  <p style={{ width: "200px", height: "100vh", position: fixed, top: 0, right: 0, display: flex, flex-direction: column }}></p>
+  <p style={{ width: "200px", height: "100vh", position: "fixed", top: 0, right: 0, display: "flex", ["flex-direction"]: "column" }}></p>
   )
 }
 
