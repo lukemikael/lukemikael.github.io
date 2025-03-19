@@ -2,7 +2,7 @@ function CCAndCocDisplay() {
  return (
     <div style={{ 
       width: "85vw",
-      height: "100vh",
+      height: "20vh",
       position: "fixed",
       top: 0,
       right: 0,
@@ -14,7 +14,8 @@ function CCAndCocDisplay() {
               overflow: "auto",
               flex: "1 1 auto"
             }}>
-          
+          <iframe src="https://drive.google.com/file/d/1mexBgUdUl6-QtNCXg5v1OFw-Jrt1ct8Q/preview"></iframe>
+         <iframe src="https://drive.google.com/file/d/1DtZ4pfROwvwlVbtzRgcAwrFG14Sasok_/preview"></iframe>
         </div>  
     </div>
   )
