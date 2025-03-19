@@ -2,10 +2,7 @@ function CCAndCocDisplay() {
  return (
     <div style={{ 
       width: "85vw",
-      height: "20vh",
-      position: "fixed",
-      top: 0,
-      right: 0,
+      height: "40vh",
       display: "flex",
       flexDirection: "column"
     }}>
@@ -19,6 +16,24 @@ function CCAndCocDisplay() {
         </div>  
     </div>
   )
+}
+
+function CartAndDO (){
+     <div style={{ 
+      width: "85vw",
+      height: "40vh",
+      display: "flex",
+      flexDirection: "column"
+    }}>
+        <div className="overflow"
+            style={{
+              overflow: "auto",
+              flex: "1 1 auto"
+            }}>
+          <iframe src="https://drive.google.com/file/d/12Ye8t-ZhgiHRcxatFsrZMCTdge-t-LwK/preview"></iframe>
+         <iframe src="https://drive.google.com/file/d/1TvqUwDJWQBMxDfGCsZ98pdmAGEz7A-dv/preview"></iframe>
+        </div>  
+    </div>
 }
 
 function SearchBox() {
