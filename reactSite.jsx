@@ -19,7 +19,7 @@ function CCAndCocDisplay() {
 }
 
 function CartAndDO (){
-     <div style={{ 
+     return (<div style={{ 
       width: "85vw",
       height: "40vh",
       display: "flex",
@@ -33,7 +33,7 @@ function CartAndDO (){
           <iframe src="https://drive.google.com/file/d/12Ye8t-ZhgiHRcxatFsrZMCTdge-t-LwK/preview"></iframe>
          <iframe src="https://drive.google.com/file/d/1TvqUwDJWQBMxDfGCsZ98pdmAGEz7A-dv/preview"></iframe>
         </div>  
-    </div>
+    </div>)
 }
 
 function SearchBox() {
