@@ -1,6 +1,6 @@
 function CCAndCocDisplay() {
  return (
-    <p style={{ 
+    <div style={{ 
       width: "85vw",
       height: "100vh",
       position: "fixed",
@@ -9,14 +9,14 @@ function CCAndCocDisplay() {
       display: "flex",
       flexDirection: "column"
     }}>
-        <div class="overflow"
+        <div className="overflow"
             style={{
               overflow: "auto",
               flex: "1 1 auto"
             }}>
           
         </div>  
-    </p>
+    </div>
   )
 }
 
