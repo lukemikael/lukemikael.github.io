@@ -7,8 +7,15 @@ function CCAndCocDisplay() {
       top: 0,
       right: 0,
       display: "flex",
-      "flex-direction": "column"
-    }}>  
+      flexDirection: "column"
+    }}>
+        <div class="overflow"
+            style={{
+              overflow: auto,
+              flex: "1 1 auto"
+            }}>
+          
+        </div>  
     </p>
   )
 }
