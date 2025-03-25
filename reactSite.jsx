@@ -43,12 +43,12 @@ function CartOrgInfo() {
 
      <div>&nbsp;</div>
 
-  <div class="container-fluid">
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOrganizationalInfo" aria-expanded="false" aria-controls="collapseOrganizationalInfo">
+  <div className="container-fluid">
+    <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOrganizationalInfo" aria-expanded="false" aria-controls="collapseOrganizationalInfo">
         Organizational Info
     </button>
-    <div class="collapse" id="collapseOrganizationalInfo">
-        <table class="table">
+    <div className="collapse" id="collapseOrganizationalInfo">
+        <table className="table">
           <tbody>
             <tr>
               <th scope="row">Email</th>
@@ -90,11 +90,11 @@ function CartOrgInfo() {
         </table>
     </div>
     </div>
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#cartInformation" aria-expanded="false" aria-controls="collapseCartInformation">
+    <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#cartInformation" aria-expanded="false" aria-controls="collapseCartInformation">
         Cart Information
     </button>
-    <div class="collapse" id="cartInformation">
-        <table class="table">
+    <div className="collapse" id="cartInformation">
+        <table className="table">
           <tbody>
             <tr>
               <th scope="row">CART Email</th>
@@ -127,15 +127,15 @@ function CartOrgInfo() {
 
 function SearchBox(functionThatSendsInfoBack) {
   const [searchTerm, setSearchTerm] = React.useState('');
-  useEffect(() => {
+  React.useEffect(() => {
    console.log("change search term");
   }, [searchTerm]);
 
   return (
-    <div class="container-fluid">
+    <div className="container-fluid">
         <div>&nbsp;</div>
         <h1>Compliance Matrix Dashboard</h1>
-        <div class="input-group">
+        <div className="input-group">
            <input 
             type="text"
             className="form-control"
