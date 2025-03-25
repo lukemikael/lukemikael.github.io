@@ -39,13 +39,7 @@ function CartAndDO (){
 function CartOrgInfo() {
   return (
     <div>
-      <div class="container-fluid">
-        <div>&nbsp;</div>
-        <h1>Compliance Matrix Dashboard</h1>
-        <div class="input-group">
-           <input type="text" class="form-control" placeholder="enter keywords such as bir central office, PCO, fda"/>
-        </div>
-      </div>
+     <SearchBox /> 
 
      <div>&nbsp;</div>
 
@@ -131,19 +125,53 @@ function CartOrgInfo() {
   )
 }
 
-function SearchBox() {
-  return <h1></h1>;
+function SearchBox(functionThatSendsInfoBack) {
+  const [searchTerm, setSearchTerm] = useState('');
+  useEffect(() => {
+   console.log("change search term");
+  }, [searchTerm]);
+
+  return (
+    <div class="container-fluid">
+        <div>&nbsp;</div>
+        <h1>Compliance Matrix Dashboard</h1>
+        <div class="input-group">
+           <input 
+            type="text"
+            class="form-control"
+            placeholder="enter keywords such as bir central office, PCO, fda"
+            value={searchTerm}
+            onChange={e => setSearchTerm(e.target.value)}
+            />
+        </div>
+      </div>
+    );
 }
 
-function Base() {
-  return (
-   <div>
-      <h1>Citizen's Charter and Certificate of Compliance</h1>
+class Base extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {input: ""};
+  }
+
+  componentDidMount() {
+    this.setState({input: ""});
+
+  }
+
+  componentWillUnmount() {
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Citizen's Charter and Certificate of Compliance</h1>
         <CCAndCocDisplay />
-    <h1>Cart DO and Cart Directory</h1>
+        <h1>Cart DO and Cart Directory</h1>
         <CartAndDO />
       </div>
     )
+  }
 }
 
 const container = document.getElementById('reactRoot');
