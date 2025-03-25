@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 function CCAndCocDisplay() {
  return (
     <div style={{ 
@@ -138,7 +140,7 @@ function SearchBox(functionThatSendsInfoBack) {
         <div class="input-group">
            <input 
             type="text"
-            class="form-control"
+            className="form-control"
             placeholder="enter keywords such as bir central office, PCO, fda"
             value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
