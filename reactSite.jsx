@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 function CCAndCocDisplay() {
  return (
     <div style={{ 
@@ -128,7 +126,7 @@ function CartOrgInfo() {
 }
 
 function SearchBox(functionThatSendsInfoBack) {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = React.useState('');
   useEffect(() => {
    console.log("change search term");
   }, [searchTerm]);
