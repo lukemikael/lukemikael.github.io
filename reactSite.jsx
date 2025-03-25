@@ -37,17 +37,19 @@ function CartAndDO (){
 }
 
 function CartOrgInfo() {
-return (
-  <div>
-<div class="container-fluid">
-    <div>&nbsp;</div>
-    <h1>Compliance Matrix Dashboard</h1>
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="enter keywords such as bir central office, PCO, fda">
-    </div>
-</div>
-<div>&nbsp;</div>
-<div class="container-fluid">
+  return (
+    <div>
+      <div class="container-fluid">
+        <div>&nbsp;</div>
+        <h1>Compliance Matrix Dashboard</h1>
+        <div class="input-group">
+           <input type="text" class="form-control" placeholder="enter keywords such as bir central office, PCO, fda"/>
+        </div>
+      </div>
+
+     <div>&nbsp;</div>
+
+  <div class="container-fluid">
     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOrganizationalInfo" aria-expanded="false" aria-controls="collapseOrganizationalInfo">
         Organizational Info
     </button>
@@ -93,6 +95,7 @@ return (
           </tbody>
         </table>
     </div>
+    </div>
     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#cartInformation" aria-expanded="false" aria-controls="collapseCartInformation">
         Cart Information
     </button>
@@ -123,11 +126,9 @@ return (
         </table>
     </div>
 
-<div>&nbsp;</div>
+    <div>&nbsp;</div>
 </div>
-</div>
-</div>
-)
+  )
 }
 
 function SearchBox() {
